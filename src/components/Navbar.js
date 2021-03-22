@@ -15,7 +15,6 @@ class Navbar extends Component {
     return (
       <ThemeContext.Consumer>
         {(context) => {
-          console.log("context", context);
           const { isDarkTheme, darkTheme, lightTheme } = context;
           const theme = isDarkTheme ? darkTheme : lightTheme;
           return (
@@ -36,7 +35,7 @@ class Navbar extends Component {
 
 const styles = StyleSheet.create({
   headerContainer: {
-    backgroundColor: "dimGrey",
+    backgroundColor: "#696969",
     height: 200,
     justifyContent: "space-between",
     alignItems: "center",
@@ -53,7 +52,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     width: "100%",
     marginTop: 25,
-    backgroundColor: "light-grey",
+    backgroundColor: "#D3D3D3",
     alignSelf: "flex-end",
   },
   headerTab: {
